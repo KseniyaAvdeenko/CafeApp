@@ -23,7 +23,7 @@ export default function AdminMeals() {
             setAdminMeals(result);
         })
     },)
-    console.log(adminMeals)
+
     const createMeal = (newMeal) => {
         setAdminMeals([...adminMeals, newMeal])
         axios.post(BASE_API_URL, newMeal)
